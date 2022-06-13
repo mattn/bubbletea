@@ -9,7 +9,6 @@ import (
 
 	"github.com/charmbracelet/bubbles/textarea"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/lipgloss"
 )
 
 func main() {
@@ -35,8 +34,6 @@ func initialModel() model {
 	ti.CharLimit = 400
 	ti.Width = 40
 	ti.Height = 5
-	ti.LineLimit = 10
-	ti.CursorLineStyle = lipgloss.NewStyle().Background(lipgloss.Color("#222"))
 	ti.ShowLineNumbers = true
 
 	return model{
